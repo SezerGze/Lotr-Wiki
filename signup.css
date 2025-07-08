@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 
-html::selection{
+html::selection {
     background-color: #393E46;
     color: #DFD0B8;
 }
@@ -362,6 +362,7 @@ input::placeholder {
     z-index: 1;
     opacity: 0.3;
 }
+
 @media (max-width:600px) {
     html {
         font-size: 16px;
@@ -392,29 +393,35 @@ input::placeholder {
         width: 150px;
         height: auto;
     }
+
     #search:hover,
     #search:focus {
         width: 150px;
         outline: none;
     }
-    
-    .signup-side{
+
+    .signup-side {
         width: auto;
         height: auto;
     }
-    .main-div{
+
+    .main-div {
         grid-template-columns: 1fr;
     }
-    .main-side{
+
+    .main-side {
         height: auto;
 
     }
-    .signup-btn{
+
+    .signup-btn {
         margin-right: 10px;
     }
-    .signup-btn button{
+
+    .signup-btn button {
         margin-left: 10px;
     }
+
     .footer {
         flex-direction: row;
         font-size: 15px;
@@ -433,7 +440,8 @@ input::placeholder {
         width: 100%;
         align-items: end;
     }
-    .side-navbar{
+
+    .side-navbar {
         display: none;
     }
 }

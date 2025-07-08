@@ -1,31 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
   <link rel="icon" href="Resimler/logo.png">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
   <title>Lotr Wiki</title>
 
 </head>
+
 <body>
   <div class="container">
 
     <div class="navbar">
       <div class="left-nav">
-        <div><a href="" class="nav-btn home">LotrWiki</a></div>
+        <div><a href="index.html" class="nav-btn home">LotrWiki</a></div>
       </div>
       <div class="right-nav">
         <div>
-          <input type="text" id="search" placeholder="Ara...">      
+          <input type="text" class="search" placeholder="Ara...">
         </div>
         <div>
           <a href="login.html" class="nav-btn">Giriş Yap</a>
           <a href="signup.html" class="nav-btn">Kayıt Ol</a>
         </div>
       </div>
-      
+
     </div>
     <div class="side-navbar">
       <img src="Resimler/tolkien.jpg" alt="" class="side-navbar-img">
@@ -42,7 +46,7 @@
         </div>
         <div class="side-navbar-title">
           Savaşlar
-          <ul class="sidebar-link" >
+          <ul class="sidebar-link">
             <li><a href="sis.html">Son İttifak Savaşı</a></li>
             <li><a href="hldeep.html">Helm’s Deep Savaşı</a></li>
             <li><a href="minast.html">Minas Tirith Kuşatması</a></li>
@@ -64,14 +68,14 @@
         </div>
         <div class="side-navbar-title">
           Olaylar
-          <ul class="sidebar-link" >
+          <ul class="sidebar-link">
             <li><a href="">Yüzüğün Yok Edilmesi</a></li>
             <li><a href="">Elflerin Solması</a></li>
           </ul>
         </div>
         <div class="side-navbar-title">
           Çağlar
-          <ul class="sidebar-link" >
+          <ul class="sidebar-link">
             <li><a href="">Birinci Çağ</a></li>
             <li><a href="">İkinci Çağ</a></li>
             <li><a href="">Üçüncü Çağ</a></li>
@@ -85,7 +89,7 @@
         <div class="main-top-search">
           <div>
             <p class="head-p">J.R.R Tolkien</p>
-            <input type="text" id="search-main" placeholder="Ara...">
+            <input type="text" class="search-main" placeholder="Ara...">
           </div>
         </div>
         <div class="main-top-cards">
@@ -97,14 +101,18 @@
         </div>
       </div>
       <div class="line-text">İçerik</div>
-      <div class="main-side">    
+      <div class="main-side">
         <a href="sis.html" class="main-grid1 main-card">
           <img src="Resimler/sis.jpg" alt="" style="width: 100%; height: 80%;">
-          <div class="card-content" style="text-align: center;"><p>Son İttifak Savaşı Nedir? </p></div>
+          <div class="card-content" style="text-align: center;">
+            <p>Son İttifak Savaşı Nedir? </p>
+          </div>
         </a>
         <a href="hldeep.html" class="main-grid2 main-card">
           <img src="Resimler/hldeep.jpg" alt="" style="width: 100%; height: 80%;">
-          <div class="card-content" style="text-align: center;"><p>Helm’s Deep Savaşı Nedir? </p></div>
+          <div class="card-content" style="text-align: center;">
+            <p>Helm’s Deep Savaşı Nedir? </p>
+          </div>
         </a>
         <div class="main-grid3 main-card">
           <h3>Keşfet</h3>
@@ -125,29 +133,34 @@
             </ul>
           </div>
         </div>
-        
+
         <a href="minast.html" class="main-grid4 main-card">
           <img src="Resimler/minast.jpg" alt="" style="width: 100%; height: 80%;">
-          <div class="card-content" style="text-align: center;"><p>Minas Tirith Kuşatması Nedir?</p></div>
+          <div class="card-content" style="text-align: center;">
+            <p>Minas Tirith Kuşatması Nedir?</p>
+          </div>
         </a>
         <a href="gandalf.html" class="main-grid5 main-card">
           <img src="Resimler/gandalf1.jpg" alt="" style="width: 100%; height: 80%;">
-          <div class="card-content" style="text-align: center;"><p>Gandalf Kimdir ? </p></div>
+          <div class="card-content" style="text-align: center;">
+            <p>Gandalf Kimdir ? </p>
+          </div>
         </a>
-        <div href="" class="main-grid6 main-card">
+        <div class="main-grid6 main-card">
           <h3>Tolkien'den Sözler</h3>
           <div class="main-grid6-word">
-            <p>"Böyle zamanlarda yaşamak kimsenin isteği değildir. Ama bunu biz seçemeyiz. Seçebileceğimiz tek şey, bize verilen zamanla ne yapacağımızdır.”</p>
+            <p>"Böyle zamanlarda yaşamak kimsenin isteği değildir. Ama bunu biz seçemeyiz. Seçebileceğimiz tek şey, bize
+              verilen zamanla ne yapacağımızdır.”</p>
           </div>
           <div class="main-grid6-bottom">── J.R.R Tolkien</div>
         </div>
-        
+
       </div>
     </div>
     <div class="footer">
 
       <div class="footer-logo">
-        <img src="Resimler/logo.png" alt="" width="80px"  height="80px" class="logo-img">
+        <img src="Resimler/logo.png" alt="" width="80px" height="80px" class="logo-img">
         <div>J.R.R Tolkien</div>
       </div>
       <div class="footer-mid">-Lord Of The Rings Wiki-</div>
@@ -160,8 +173,8 @@
         <a href="">Hakkında</a>
       </div>
     </div>
-    
-    
+
+
 
 
 
@@ -172,4 +185,5 @@
 
   </div>
 </body>
+
 </html>
