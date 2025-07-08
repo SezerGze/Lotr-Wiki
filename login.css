@@ -213,7 +213,7 @@ input {
 
 .container::before {
     content: "";
-    background-image: url("Resimler/pngwing.com\ \(2\).png");
+    background-image: url("Resimler/png2.png");
     background-size: cover;
     background-repeat: no-repeat;
     position: absolute;
@@ -384,7 +384,7 @@ input {
 
 .footer::before {
     content: "";
-    background-image: url("Resimler/pngwing.com\ \(1\).PNG");
+    background-image: url("Resimler/png1.png");
     background-size: 80px 100px;
     background-repeat: no-repeat;
     background-position: right;

@@ -402,7 +402,7 @@ ul:not(.sidebar-link) {
 
 .footer::before {
     content: "";
-    background-image: url("Resimler/pngwing.com\ \(1\).PNG");
+    background-image: url("Resimler/png1.png");
     background-size: 80px 100px;
     background-repeat: no-repeat;
     background-position: right;
