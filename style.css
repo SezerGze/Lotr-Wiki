@@ -1,0 +1,589 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html::selection {
+    background-color: #393E46;
+    color: #DFD0B8;
+}
+
+body {
+    background-color: #222831;
+    font-size: 20px;
+    color: #DFD0B8;
+}
+
+input {
+    font-size: 16px;
+}
+
+.container {
+    display: grid;
+    grid-template-areas:
+        "navbar navbar navbar navbar navbar"
+        "main main main main main"
+        "footer footer footer footer footer"
+    ;
+    grid-template-rows: 50px 1fr 150px;
+}
+
+.navbar {
+    background-color: #222831;
+    color: #DFD0B8;
+    display: flex;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    grid-area: navbar;
+    font-size: 16px;
+    border-bottom: 1px solid #948979;
+}
+
+.left-nav,
+.right-nav {
+    display: flex;
+    align-items: center;
+    padding: 5px;
+}
+
+.nav-btn {
+    text-decoration: none;
+    color: #DFD0B8;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 0 10px;
+    transition: background-color 0.4s ease;
+}
+
+.home {
+    display: flex;
+    align-items: center;
+}
+
+.home::before {
+    content: "";
+    background-image: url("Resimler/ring.png");
+    width: 30px;
+    height: 30px;
+    margin-right: 15px;
+    animation-name: ring;
+    background-size: cover;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes ring {
+    from {
+        rotate: 0deg;
+    }
+
+    to {
+        rotate: 360deg;
+    }
+}
+
+.nav-btn:not(.home):hover {
+    background-color: #393E46;
+}
+
+#search {
+    border-radius: 10px;
+    width: 100px;
+    margin-right: 5px;
+    border: 1px solid #393E46;
+    background-color: #948979;
+    padding: 5px 10px;
+    transition: width 0.4s;
+}
+
+#search::placeholder {
+    color: #222831;
+    font-style: italic;
+}
+
+
+#search:hover,
+#search:focus {
+    width: 200px;
+    outline: none;
+}
+
+
+.main {
+    display: grid;
+    margin-top: 100px;
+    width: 100%;
+    justify-content: center;
+    grid-area: main;
+    gap: 50px;
+    margin-bottom: 50px;
+}
+
+.main-top {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.head-p {
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.main-top-cards {
+    display: flex;
+}
+
+.main-top-search {
+    margin-bottom: 10px;
+}
+
+.cards {
+    width: 150px;
+    height: 100px;
+    border: 1px solid #948979;
+    border-radius: 15px;
+    padding: 10px;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    box-shadow: rgba(0, 0, 0, 0.5) 0px 8px 15px;
+    text-decoration: none;
+    color: #DFD0B8;
+    transition: 0.4s;
+}
+
+.cards:hover {
+    box-shadow: rgba(0, 0, 0, 0.5) 0px 8px 15px, rgba(0, 0, 0, 0.5) 3px 3px 15px 1px inset;
+    transform: scale(1.13);
+}
+
+.cuce-card {
+    background-image: url("Resimler/cüce.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+.insan-card {
+    background-image: url("Resimler/insan.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.elf-card {
+    background-image: url("Resimler/elf2.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.ork-card {
+    background-image: url("Resimler/mordor.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.istari-card {
+    background-image: url("Resimler/istari.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#search-main {
+    border-radius: 10px;
+    width: 300px;
+    margin-right: 5px;
+    border: 1px solid #393E46;
+    background-color: #948979;
+    padding: 10px;
+    transition: width 0.4s;
+}
+
+#search-main::placeholder {
+    color: #222831;
+    font-style: italic;
+}
+
+
+#search-main:focus {
+    outline: none;
+}
+
+.container::before {
+    content: "";
+    background-image: url("Resimler/pngwing.com\ \(2\).png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    left: 50%;
+    transform: translate(-50%);
+    top: 90px;
+    z-index: -1;
+    animation-name: main-bg;
+    animation-duration: 100s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+.main::before {
+    content: "";
+    background-image: url("Resimler/bck.JPG");
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: fixed;
+    top: 50px;
+    width: 100%;
+    height: 100%;
+    z-index: -2;
+    opacity: 0.2;
+    mask-image: linear-gradient(to bottom, black, transparent 100%);
+    -webkit-mask-image: linear-gradient(to bottom, black, transparent 100%);
+
+}
+
+.side-navbar {
+    position: fixed;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    border-width: 2px 2px 2px 0;
+    border-color: #948979;
+    border-style: solid;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    height: 320px;
+    background-color: #222831;
+    z-index: 100;
+}
+
+.side-navbar::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 100%;
+    transform: translateY(-50%);
+    width: 0;
+    height: 0;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-left: 10px solid #948979;
+}
+
+.side-navbar-content {
+    display: none;
+}
+
+.side-navbar:hover .side-navbar-content {
+    display: flex;
+    flex-direction: column;
+    background-color: #222831;
+    z-index: 5;
+    border-radius: 10px;
+}
+
+.side-navbar:hover .side-navbar-img {
+    display: none;
+}
+
+.sidebar-link {
+    display: none;
+    list-style-type: none;
+    background-color: #222831;
+    z-index: 10;
+    border: 1px solid #948979;
+    border-radius: 5px;
+}
+
+.sidebar-link a {
+    text-decoration: none;
+    color: #DFD0B8;
+    padding: 10px;
+}
+
+.sidebar-link li {
+    padding: 10px;
+    margin: 0;
+    width: auto;
+    min-width: max-content;
+
+}
+
+.sidebar-link li:hover,
+.side-navbar-title:hover {
+    background-color: rgba(148, 137, 121, 0.4);
+    cursor: pointer;
+}
+
+.side-navbar-title {
+    padding: 15px;
+    margin: 0;
+    line-height: 31px;
+    position: relative;
+}
+
+.side-navbar-title:hover .sidebar-link {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    left: 122px;
+    top: 0;
+}
+
+.side-navbar-img {
+    width: 30px;
+    margin: 0;
+    padding: 0;
+    border-top-right-radius: 8px;
+    border-bottom: 2px solid #DFD0B8;
+}
+
+
+@keyframes main-bg {
+    from {
+        transform: translateX(-50%) rotate(0deg);
+    }
+
+    to {
+        transform: translateX(-50%) rotate(360deg);
+    }
+}
+
+.line-text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 93%;
+    margin: 0 auto;
+}
+
+.line-text::after,
+.line-text::before {
+    content: "";
+    flex: 1;
+    border-bottom: 1px solid #DFD0B8;
+    margin: 0 10px;
+}
+
+.main-side {
+    display: grid;
+    grid-template-rows: 400px 400px 400px;
+    margin: 0 auto;
+    width: 90%;
+    row-gap: 15px;
+}
+
+.main-card {
+    border: 1px solid #948979;
+    margin: 10px 20px;
+    text-decoration: none;
+    color: #DFD0B8;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.main-card img {
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+.card-content {
+    padding: 10px;
+}
+
+.main-grid3 {
+    grid-column: 3/span 3;
+    grid-row: 1/ span 2;
+}
+
+.main-grid3 h3,
+.main-grid6 h3 {
+    text-align: center;
+    padding: 20px;
+}
+
+.main-grid3-tags {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    margin: 20px;
+    font-size: 22px;
+}
+
+.main-grid3-tags li {
+    margin-bottom: 25px;
+}
+
+.main-grid3-tags a:hover {
+    background-color: #393E46;
+    border-radius: 5px;
+}
+
+.main-grid3-tags a {
+    text-decoration: none;
+    color: #bba585;
+    padding: 5px;
+    padding: 5px;
+}
+
+.main-grid6 {
+    grid-column: 1/ span 5;
+    height: 200px;
+}
+
+.main-grid6-word {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    margin: 10px;
+    font-size: 20px;
+    color: #dbc39e;
+}
+
+.main-grid6-bottom {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 20px;
+}
+
+.footer {
+    grid-area: footer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    background-color: #393E46;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 5px inset;
+    position: relative;
+}
+
+.footer-logo {
+    display: flex;
+    align-items: center;
+    margin-left: 15px;
+}
+
+.footer-info {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin-right: 10px;
+    margin-left: 110px;
+}
+
+.footer-info a:not(.link-discord) {
+    text-decoration: none;
+    color: #DFD0B8;
+    padding: 5px;
+}
+
+.footer::before {
+    content: "";
+    background-image: url("Resimler/pngwing.com\ \(1\).PNG");
+    background-size: 80px 100px;
+    background-repeat: no-repeat;
+    background-position: right;
+    position: absolute;
+    left: 0px;
+    top: 0;
+    bottom: 0;
+    right: 200px;
+    z-index: 1;
+    opacity: 0.3;
+}
+
+@media (max-width:600px) {
+    html {
+        font-size: 16px;
+    }
+
+    .container {
+        grid-template-areas:
+            "navbar"
+            "main"
+            "footer"
+        ;
+        grid-template-rows: auto 1fr auto;
+    }
+
+    .navbar {
+        flex-direction: column;
+    }
+
+    .left-nav {
+        justify-content: center;
+    }
+
+    .right-nav {
+        justify-content: space-between;
+    }
+
+    #search {
+        width: 150px;
+
+    }
+
+    #search:hover,
+    #search:focus {
+        width: 150px;
+        outline: none;
+    }
+
+    .main-top-cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .cards {
+        width: 200px;
+    }
+
+    .main-card {
+        height: auto;
+    }
+
+    .main-side {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        width: 100%;
+    }
+
+    .main-grid1,
+    .main-grid2,
+    .main-grid3,
+    .main-grid4,
+    .main-grid5,
+    .main-grid6 {
+        grid-column: 1/-1;
+        grid-row: auto;
+    }
+
+    .footer {
+        flex-direction: row;
+        font-size: 15px;
+        padding: 15px 0;
+    }
+
+    .footer-mid {
+        display: none;
+    }
+
+    .footer::before {
+        display: none;
+    }
+
+    .footer-info {
+        width: 100%;
+        align-items: end;
+    }
+}
