@@ -129,7 +129,7 @@ input {
 
 .main::before {
     content: "";
-    background-image: url("Resimler/bck.JPG");
+    background-image: url("Resimler/bck.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     position: absolute;
@@ -450,7 +450,7 @@ ul:not(.sidebar-link) {
 
     .main::before {
         content: "";
-        background-image: url("Resimler/bck.JPG");
+        background-image: url("Resimler/bck.jpg");
         background-size: contain;
         background-repeat: no-repeat;
         position: absolute;

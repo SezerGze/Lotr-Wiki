@@ -197,7 +197,7 @@ input::placeholder {
 
 .main::before {
     content: "";
-    background-image: url("Resimler/bck.JPG");
+    background-image: url("Resimler/bck.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     position: fixed;
