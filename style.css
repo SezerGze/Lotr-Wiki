@@ -2,6 +2,10 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    
+  outline: 1px solid red;
+
+
 }
 
 html::selection {
@@ -583,6 +587,9 @@ input {
 
     .footer-info {
         width: 100%;
+        align-items: end;
+        margin-left: 0;
+        margin-right: 0;
         align-items: end;
     }
 }
