@@ -517,5 +517,8 @@ ul:not(.sidebar-link) {
     .footer-info {
         width: 100%;
         align-items: end;
+        margin-left: 0;
+        margin-right: 0;
+        align-items: end;
     }
 }
