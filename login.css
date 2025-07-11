@@ -13,7 +13,6 @@ body {
     background-color: #222831;
     font-size: 20px;
     color: #DFD0B8;
-    height: 100vh;
 }
 
 input {
@@ -28,7 +27,7 @@ input {
         "footer footer footer footer footer"
     ;
     grid-template-rows: 50px 1fr 150px;
-    height: 100vh;
+    min-height: 100vh;
 }
 
 .navbar {
@@ -129,10 +128,14 @@ input {
     align-content: space-between;
     border: 2px solid #948979;
     height: 420px;
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
 }
 
 .login-side {
-    width: 600px;
+    width: 100%;
+    max-width: 600px;
     height: 300px;
     padding: 40px 50px;
     font-size: 22px;
@@ -153,7 +156,8 @@ input {
 }
 
 .login-div input {
-    width: 280px;
+    width: 100%;
+    max-width: 280px;
     background-color: #948979;
     font-size: 20px;
 }
@@ -196,6 +200,7 @@ input {
     align-items: center;
     height: 100%;
     border-top: 2px solid #948979;
+    width: 100%;
 }
 
 .sign-up p {
