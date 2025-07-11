@@ -429,6 +429,7 @@ ul:not(.sidebar-link) {
 
     .navbar {
         flex-direction: column;
+        font-size: 15px;
     }
 
     .left-nav {
@@ -473,7 +474,10 @@ ul:not(.sidebar-link) {
         width: 150px;
         outline: none;
     }
-
+     .header-title{
+        display: flex;
+        justify-content: center;
+    }
     .side-navbar {
         width: auto;
     }

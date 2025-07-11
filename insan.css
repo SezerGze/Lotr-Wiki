@@ -431,6 +431,7 @@ ul:not(.sidebar-link) {
 
     .navbar {
         flex-direction: column;
+        font-size: 15px;
     }
 
     .left-nav {
@@ -463,7 +464,10 @@ ul:not(.sidebar-link) {
     .side-navbar img {
         width: 24px;
     }
-
+    .header-title{
+        display: flex;
+        justify-content: center;
+    }
     .main-page,
     .content-bottom,
     .content-bottom2 {

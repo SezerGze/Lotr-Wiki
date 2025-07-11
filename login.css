@@ -412,6 +412,7 @@ input {
 
     .navbar {
         flex-direction: column;
+        font-size: 15px;
     }
 
     .left-nav {
