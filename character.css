@@ -478,12 +478,14 @@ ul:not(.sidebar-link) {
         display: flex;
         justify-content: center;
     }
-    .side-navbar {
-        width: auto;
+     .side-navbar{
+        width: 20px;
     }
-
-    .side-navbar img {
-        width: 24px;
+    .side-navbar-img{
+        width: 20px;
+    }
+    .side-navbar:hover{
+        width: auto;
     }
 
     .main-page,

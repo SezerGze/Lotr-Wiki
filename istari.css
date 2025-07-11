@@ -474,16 +474,20 @@ ul:not(.sidebar-link) {
         outline: none;
     }
 
-    .side-navbar {
+    .side-navbar{
+        width: 20px;
+    }
+    .side-navbar-img{
+        width: 20px;
+    }
+    .side-navbar:hover{
         width: auto;
     }
      .header-title{
         display: flex;
         justify-content: center;
     }
-    .side-navbar img {
-        width: 24px;
-    }
+
 
     .main-page,
     .content-bottom,

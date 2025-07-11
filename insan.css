@@ -457,13 +457,16 @@ ul:not(.sidebar-link) {
         outline: none;
     }
 
-    .side-navbar {
+    .side-navbar{
+        width: 20px;
+    }
+    .side-navbar-img{
+        width: 20px;
+    }
+    .side-navbar:hover{
         width: auto;
     }
 
-    .side-navbar img {
-        width: 24px;
-    }
     .header-title{
         display: flex;
         justify-content: center;
