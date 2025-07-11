@@ -13,7 +13,7 @@ body {
     background-color: #222831;
     font-size: 20px;
     color: #DFD0B8;
-    height: 100vh;
+    min-height: 100vh;
 }
 
 input {
@@ -28,7 +28,7 @@ input {
         "footer footer footer footer footer"
     ;
     grid-template-rows: 50px 1fr 150px;
-    height: 100vh;
+    min-height: 100vh;
 }
 
 .navbar {
@@ -396,6 +396,7 @@ input {
     z-index: 1;
     opacity: 0.3;
 }
+
 @media (max-width:600px) {
     html {
         font-size: 16px;
@@ -409,14 +410,17 @@ input {
         ;
         grid-template-rows: auto 1fr auto;
     }
-     .right-nav > div:last-child {
-    display: flex;
-    flex-wrap: nowrap;
+
+    .right-nav>div:last-child {
+        display: flex;
+        flex-wrap: nowrap;
     }
+
     .nav-btn {
-    margin: 0 5px;
-    padding: 5px 8px;
+        margin: 0 5px;
+        padding: 5px 8px;
     }
+
     .navbar {
         flex-direction: column;
         font-size: 15px;
@@ -434,32 +438,38 @@ input {
         width: 150px;
         height: auto;
     }
-    .login-side-mid{
+
+    .login-side-mid {
         flex-direction: column;
     }
-    .login-side{
+
+    .login-side {
         width: auto;
         height: auto;
         border: 2px solid #948979;
         margin-bottom: 5px;
     }
-    .input-forgot{
+
+    .input-forgot {
         margin-top: 5px;
     }
-    .login-div{
+
+    .login-div {
         grid-template-columns: 1fr;
         width: 100%;
     }
+
     #search:hover,
     #search:focus {
         width: 150px;
         outline: none;
     }
-    .main-side{
+
+    .main-side {
         flex-direction: column;
         border: none;
     }
-    
+
     .footer {
         flex-direction: row;
         font-size: 15px;
@@ -481,10 +491,12 @@ input {
         margin-right: 0;
         align-items: end;
     }
-    .side-navbar{
+
+    .side-navbar {
         display: none;
     }
-    .signup-side{
+
+    .signup-side {
         border: 2px solid #948979;
         padding: 20px;
         width: auto;
