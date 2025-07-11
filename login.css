@@ -444,9 +444,10 @@ input {
     }
 
     .login-side {
-        width: 100%;
-        padding: 20px;
-        box-sizing: border-box;
+        width: auto;
+        height: auto;
+        border: 2px solid #948979;
+        margin-bottom: 5px;
     }
 
     .input-forgot {
