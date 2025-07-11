@@ -13,7 +13,7 @@ body {
     background-color: #222831;
     font-size: 20px;
     color: #DFD0B8;
-    min-height: 100vh;
+    height: 100vh;
 }
 
 input {
@@ -28,7 +28,7 @@ input {
         "footer footer footer footer footer"
     ;
     grid-template-rows: 50px 1fr 150px;
-    min-height: 100vh;
+    height: 100vh;
 }
 
 .navbar {
