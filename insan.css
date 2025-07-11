@@ -466,7 +466,14 @@ ul:not(.sidebar-link) {
     .side-navbar:hover{
         width: auto;
     }
-
+     .right-nav > div:last-child {
+    display: flex;
+    flex-wrap: nowrap;
+    }
+    .nav-btn {
+    margin: 0 5px;
+    padding: 5px 8px;
+    }
     .header-title{
         display: flex;
         justify-content: center;

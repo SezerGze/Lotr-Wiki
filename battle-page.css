@@ -461,7 +461,14 @@ ul:not(.sidebar-link) {
         justify-content: center;
     }
   
-
+     .right-nav > div:last-child {
+    display: flex;
+    flex-wrap: nowrap;
+    }
+    .nav-btn {
+    margin: 0 5px;
+    padding: 5px 8px;
+    }
     .main-page,
     .content-bottom,
     .content-bottom2 {
