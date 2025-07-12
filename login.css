@@ -402,6 +402,10 @@ input {
         font-size: 16px;
     }
 
+    body {
+        height: auto;
+        min-height: 100%;
+    }
     .container {
         grid-template-areas:
             "navbar"
@@ -409,6 +413,7 @@ input {
             "footer"
         ;
         grid-template-rows: auto 1fr auto;
+        height: auto;
         min-height: 100%;
     }
 
@@ -457,9 +462,22 @@ input {
         outline: none;
     }
 
+    .main {
+        height: auto;
+        min-height: 0;
+    }
     .main-side {
         flex-direction: column;
         border: none;
+        height: auto;
+        min-height: 0;
+    }
+    .login-side {
+        width: auto;
+        height: auto;
+        min-height: 0;
+        border: 2px solid #948979;
+        margin-bottom: 5px;
     }
 
     .footer {
