@@ -89,44 +89,37 @@
             <div class="main-side">
 
                 <div class="login-side">
-                    <div class="login-side-top">
-
-                        <form class="login-div">
-                            <label for="nickname">Kullanıcı Adı:</label>
-                            <input type="text" id="nickname">
-                            <label for="password">Şifre:</label>
-                            <input type="password" id="password">
-                        </form>
-                    </div>
-
-                    <div class="login-side-mid">
-
-                        <form class="keep-me">
-                            <label for="keepme">Beni Hatırla</label>
-                            <input type="checkbox" id="keepme">
-                        </form>
-                        <div class="input-forgot">
-                            <a href="">Şifreni mi unuttun?</a>
+                    <form action="" class="login-main-side">
+                        <div class="login-side-top">
+                                <label for="nickname">Kullanıcı Adı:</label>
+                                 <input type="text" id="nickname">  
+                                <label for="password">Şifre:</label>                                       
+                                <input type="password" id="password">      
                         </div>
-                    </div>
+                        <div class="login-side-mid">
+                            <label for="keepme" style="margin-bottom: 5px;">
+                                Beni Hatırla
+                                <input type="checkbox" id="keepme">
+                            </label>
+                            <a href="">Şifreni mi Unuttun?</a>
+                        </div>
+                        <div class="login-btn">
+                            <button type="submit">Giriş Yap</button>
+                        </div>
 
-
-                    <div class="login-btn">
-                        <button type="button">Giriş Yap</button>
-                    </div>
-
+                    </form>
 
 
                 </div>
 
                 <div class="signup-side">
-                    <div style="width: 50px;"></div>
-                    <div class="sign-up">
-                        <p>Üye Değil misin?</p>
-                        <button>Üye Ol</button>
+                    <form action="">
+                        <div class="signup-main">
+                            <label for="signup">Üye değil misin?</label>
+                            <button type="submit" id="signup">Üye Ol</button>
+                        </div>
 
-                    </div>
-                    <div class="signup-img"><img src="Resimler/gandalf.png" alt="" width="50px"></div>
+                    </form>
                 </div>
             </div>
 
