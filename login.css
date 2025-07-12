@@ -414,6 +414,7 @@ input {
     }
     .container {
         overflow-x: hidden;
+        width: 100vw;
     }
     img {
         max-width: 100%;
