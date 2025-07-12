@@ -410,6 +410,14 @@ input {
     body {
         height: auto;
         min-height: 100%;
+        overflow-x: hidden;
+    }
+    .container {
+        overflow-x: hidden;
+    }
+    img {
+        max-width: 100%;
+        height: auto;
     }
     .container {
         grid-template-areas:
